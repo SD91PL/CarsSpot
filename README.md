@@ -1,4 +1,4 @@
-# CarsSpot - SD91PL
+# CarsSpot
 
 ## React + Vite + Tailwind CSS
 
