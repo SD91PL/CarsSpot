@@ -1,8 +1,6 @@
-# React + Vite
+# CarsSpot - SD91PL
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## React + Vite + Tailwind CSS
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Project prepared as part of adsite.pro recruitment.
+- Design based on the received [@Figma](https://www.figma.com/design/4R2uw8aIgX9G3SSKVRg4ho/Rekrutacja?node-id=0-1&node-type=CANVAS&t=NNotc7kPXQ4YNGhA-0) project.
