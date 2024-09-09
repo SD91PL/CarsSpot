@@ -14,7 +14,7 @@ export default function Seo() {
 								Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat
 								ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
 							</p>
-							<button className='flex items-center gap-2 pb-[0.375rem] w-16 border-b-[1.5px] text-sm'>
+							<button className='flex items-center gap-2 py-[0.375rem] w-16 border-b-[1.5px] text-sm'>
 								Rozwiń
 								<img
 									src={ArrowDown}
@@ -30,7 +30,7 @@ export default function Seo() {
 								Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat
 								ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et [...]
 							</p>
-							<button className='flex items-center gap-2 pb-[0.375rem] w-16 border-b-[1.5px] text-sm'>
+							<button className='flex items-center gap-2 py-[0.375rem] w-16 border-b-[1.5px] text-sm'>
 								Rozwiń
 								<img
 									src={ArrowDown}
