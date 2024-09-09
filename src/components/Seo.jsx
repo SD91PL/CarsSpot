@@ -5,8 +5,8 @@ export default function Seo() {
 		<section id='seo' className='bg-[#282828] min-w-screen'>
 			<div className='mx-4'>
 				<div className='container'>
-					<div className='flex justify-between items-center gap-x-12 min-h-[360px] text-white text-base'>
-						<div className='card flex flex-col gap-y-4 max-h-[185px]'>
+					<div className='flex justify-between items-center gap-x-12 gap-y-20 py-20 min-h-[360px] text-white text-base flex-wrap md:flex-nowrap'>
+						<div className='card flex flex-col gap-y-4 min-h-[185px]'>
 							<h3 className='bebas-neue text-2xl leading-9'>
 								Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.
 							</h3>
@@ -22,7 +22,7 @@ export default function Seo() {
 								/>
 							</button>
 						</div>
-						<div className='card flex flex-col gap-y-4 max-h-[185px]'>
+						<div className='card flex flex-col gap-y-4 min-h-[185px]'>
 							<h3 className='bebas-neue text-2xl leading-9'>
 								Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.
 							</h3>
