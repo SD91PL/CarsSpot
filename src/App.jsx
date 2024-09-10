@@ -9,8 +9,9 @@ function App() {
   return (
     <div className="roboto-condensed">
       <main className="bg-[#f7f7f7] min-h-screen min-w-screen">
+
       </main>
-      
+      <Gallery />
       <Seo/>
       <Footer/>
     </div>
