@@ -25,11 +25,25 @@ export default function GallerySlider() {
 	}, [])
 
 	const settings = {
+		arrows: false,
 		dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 2,
 		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true,
+				},
+			},
+		],
 	}
 
 	// Function to generate dynamic alt text based on the file name
@@ -54,7 +68,7 @@ export default function GallerySlider() {
 	return (
 		<div>
 			{/* Filter buttons */}
-			<div className='filters flex gap-12 roboto-flex font-semibold text-[.9375rem]'>
+			<div className='filters flex flex-wrap gap-x-12 gap-y-4 mb-12 md:mb-16 xl:mb-20 xl:ms-8 roboto-flex font-semibold text-[.9375rem]'>
 				<button
 					className={`${btnStyle} ${filter === 'osobowy' ? highlighted : ''}`}
 					onClick={() => setFilter('osobowy')}>
@@ -66,7 +80,7 @@ export default function GallerySlider() {
 					Samochody dostawcze
 				</button>
 				<button
-					className={`${btnStyle} ${filter === 'all' ? highlighted : ''}`}
+					className={`${btnStyle} ${filter === 'all' ? highlighted : ''} hidden md:inline-block`}
 					onClick={() => setFilter('all')}>
 					Pokaż wszystkie
 				</button>{' '}
@@ -75,12 +89,13 @@ export default function GallerySlider() {
 
 			{/* Slider with filtered images */}
 			<Slider
-				className='my-20'
+				className='mb-20'
 				{...settings}>
 				{filteredImages.map((image, index) => (
 					<div
 						key={index}
-						className='outline-none'>
+						className='sm:px-4 xl:px-[31.5px] outline-none' // Optimal padding for 601 x 446 images
+					>
 						<img
 							src={image.path}
 							alt={generateAltText(image.fileName)} // Generate dynamic alt text

@@ -3,14 +3,16 @@ import GallerySlider from './GallerySlider.jsx'
 
 export default function Gallery() {
 	return (
-		<>
-			<Headers
-				top='Prezentacja firmy'
-				cta='Zobacz naszą galerię zdjęć'
-			/>
-			<div className='container xl:max-w-[1264px] overflow-hidden'>
+		<section
+			id='gallery'
+			className='mx-4'>
+			<div className='container xl:max-w-[1328px] overflow-hidden'>
+				<Headers
+					top='Prezentacja firmy'
+					cta='Zobacz naszą galerię zdjęć'
+				/>
 				<GallerySlider />
 			</div>
-		</>
+		</section>
 	)
 }
