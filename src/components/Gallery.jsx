@@ -1,5 +1,5 @@
 import Headers from './Headers.jsx'
-import Slider from './Slider.jsx'
+import GallerySlider from './GallerySlider.jsx'
 
 export default function Gallery() {
 	return (
@@ -9,7 +9,7 @@ export default function Gallery() {
 				cta='Zobacz naszą galerię zdjęć'
 			/>
 			<div className='container xl:max-w-[1264px]'>
-				<Slider/>
+				<GallerySlider />
 			</div>
 		</>
 	)
