@@ -47,13 +47,30 @@ export default function GallerySlider() {
 		return altText.includes(filter)
 	})
 
+	// Filter buttons styling
+	const btnStyle = 'transition-colors'
+	const highlighted = 'text-[#0147FF] underline underline-offset-[.35rem]'
+
 	return (
 		<div>
 			{/* Filter buttons */}
 			<div className='filters flex gap-12 roboto-flex font-semibold text-[.9375rem]'>
-				<button onClick={() => setFilter('osobowy')}>Samochody osobowe</button>
-				<button onClick={() => setFilter('dostawczy')}>Samochody dostawcze</button>
-				<button onClick={() => setFilter('all')}>Pokaż wszystkie</button> {/* Button to show all images */}
+				<button
+					className={`${btnStyle} ${filter === 'osobowy' ? highlighted : ''}`}
+					onClick={() => setFilter('osobowy')}>
+					Samochody osobowe
+				</button>
+				<button
+					className={`${btnStyle} ${filter === 'dostawczy' ? highlighted : ''}`}
+					onClick={() => setFilter('dostawczy')}>
+					Samochody dostawcze
+				</button>
+				<button
+					className={`${btnStyle} ${filter === 'all' ? highlighted : ''}`}
+					onClick={() => setFilter('all')}>
+					Pokaż wszystkie
+				</button>{' '}
+				{/* Button to show all images */}
 			</div>
 
 			{/* Slider with filtered images */}
