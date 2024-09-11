@@ -48,8 +48,8 @@ export default function GallerySlider() {
 	})
 
 	// Filter buttons styling
-	const btnStyle = 'transition-colors underline underline-offset-[.35rem] decoration-transparent'
-	const highlighted = 'text-[#0147FF] decoration-inherit'
+	const btnStyle = 'transition-colors underline underline-offset-[.35rem] decoration-[#0000]'
+	const highlighted = 'text-[#0147FF] decoration-current'
 
 	return (
 		<div>
