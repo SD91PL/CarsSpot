@@ -6,6 +6,7 @@ import Slider from 'react-slick'
 export default function GallerySlider() {
 	const [images, setImages] = useState([])
 	const [filter, setFilter] = useState('osobowy') // 'all', 'osobowy', or 'dostawczy'
+	const [isGrabbing, setIsGrabbing] = useState(false) // Cursor changing (grab/grabbing) state
 
 	useEffect(() => {
 		const importImages = async () => {
@@ -65,6 +66,14 @@ export default function GallerySlider() {
 	const btnStyle = 'transition-colors underline underline-offset-[.35rem] decoration-[#0000]'
 	const highlighted = 'text-[#0147FF] decoration-current'
 
+	// Cursor changing (grab/grabbing) - Slider images
+	const handleMouseDown = () => {
+		setIsGrabbing(true)
+	}
+	const handleMouseUp = () => {
+		setIsGrabbing(false)
+	}
+
 	return (
 		<div>
 			{/* Filter buttons */}
@@ -97,6 +106,9 @@ export default function GallerySlider() {
 						className='sm:px-4 xl:px-[31.5px] outline-none' // Optimal padding for 601 x 446 images
 					>
 						<img
+							className={`cursor-grab ${isGrabbing ? 'cursor-grabbing' : ''}`}
+							onMouseDown={handleMouseDown} // changes cursor
+							onMouseUp={handleMouseUp} // changes cursor
 							src={image.path}
 							alt={generateAltText(image.fileName)} // Generate dynamic alt text
 						/>
