@@ -106,7 +106,7 @@ export default function GallerySlider() {
 						className='sm:px-4 xl:px-[31.5px] outline-none' // Optimal padding for 601 x 446 images
 					>
 						<img
-							className={`cursor-grab ${isGrabbing ? 'cursor-grabbing' : ''}`}
+							className={`cursor-grab transition-transform duration-500 ${isGrabbing ? 'cursor-grabbing scale-[.98]' : ''}`}
 							onMouseDown={handleMouseDown} // changes cursor
 							onMouseUp={handleMouseUp} // changes cursor
 							src={image.path}
