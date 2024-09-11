@@ -5,6 +5,7 @@ import Slider from 'react-slick'
 
 export default function GallerySlider() {
 	const [images, setImages] = useState([])
+	const [filter, setFilter] = useState('all') // 'all', 'osobowy', or 'dostawczy'
 
 	useEffect(() => {
 		const importImages = async () => {
@@ -39,12 +40,27 @@ export default function GallerySlider() {
 		return `samochód-${fileNameParts.join('-')}`
 	}
 
+	// Filter the images based on the current filter ('osobowy', 'dostawczy', or 'all')
+	const filteredImages = images.filter(image => {
+		if (filter === 'all') return true
+		const altText = generateAltText(image.fileName)
+		return altText.includes(filter)
+	})
+
 	return (
 		<div>
+			{/* Filter buttons */}
+			<div className='filters flex gap-12 roboto-flex font-semibold text-[.9375rem]'>
+				<button onClick={() => setFilter('osobowy')}>Samochody osobowe</button>
+				<button onClick={() => setFilter('dostawczy')}>Samochody dostawcze</button>
+				<button onClick={() => setFilter('all')}>Pokaż wszystkie</button> {/* Button to show all images */}
+			</div>
+
+			{/* Slider with filtered images */}
 			<Slider
-				className='mb-20 '
+				className='my-20'
 				{...settings}>
-				{images.map((image, index) => (
+				{filteredImages.map((image, index) => (
 					<div
 						key={index}
 						className='outline-none'>

@@ -8,7 +8,7 @@ export default function Gallery() {
 				top='Prezentacja firmy'
 				cta='Zobacz naszą galerię zdjęć'
 			/>
-			<div className='container xl:max-w-[1264px]'>
+			<div className='container xl:max-w-[1264px] overflow-hidden'>
 				<GallerySlider />
 			</div>
 		</>
