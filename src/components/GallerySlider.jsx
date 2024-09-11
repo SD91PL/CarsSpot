@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 
 export default function GallerySlider() {
 	const [images, setImages] = useState([])
-	const [filter, setFilter] = useState('all') // 'all', 'osobowy', or 'dostawczy'
+	const [filter, setFilter] = useState('osobowy') // 'all', 'osobowy', or 'dostawczy'
 
 	useEffect(() => {
 		const importImages = async () => {
@@ -48,8 +48,8 @@ export default function GallerySlider() {
 	})
 
 	// Filter buttons styling
-	const btnStyle = 'transition-colors'
-	const highlighted = 'text-[#0147FF] underline underline-offset-[.35rem]'
+	const btnStyle = 'transition-colors underline underline-offset-[.35rem] decoration-transparent'
+	const highlighted = 'text-[#0147FF] decoration-current'
 
 	return (
 		<div>
