@@ -5,8 +5,8 @@ import Slider from 'react-slick'
 
 export default function GallerySlider() {
 	const [images, setImages] = useState([])
-	const [filter, setFilter] = useState('osobowy') // 'all', 'osobowy', or 'dostawczy'
-	const [isGrabbing, setIsGrabbing] = useState(false) // Cursor changing (grab/grabbing) state
+	const [filter, setFilter] = useState('osobowy') // 'osobowy', 'dostawczy' or 'all' - commented in filteredImages and Filter buttons
+	const [isGrabbing, setIsGrabbing] = useState(false) // Cursor changing (grab/grabbing)
 
 	useEffect(() => {
 		const importImages = async () => {
@@ -32,8 +32,8 @@ export default function GallerySlider() {
 		speed: 500,
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		// autoplay: true,
-		// autoplaySpeed: 4000,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 576,
@@ -57,7 +57,7 @@ export default function GallerySlider() {
 
 	// Filter the images based on the current filter ('osobowy', 'dostawczy', or 'all')
 	const filteredImages = images.filter(image => {
-		if (filter === 'all') return true
+		// if (filter === 'all') return true
 		const altText = generateAltText(image.fileName)
 		return altText.includes(filter)
 	})
@@ -88,11 +88,11 @@ export default function GallerySlider() {
 					onClick={() => setFilter('dostawczy')}>
 					Samochody dostawcze
 				</button>
-				<button
+				{/* <button
 					className={`${btnStyle} ${filter === 'all' ? highlighted : ''} hidden md:inline-block`}
 					onClick={() => setFilter('all')}>
 					Pokaż wszystkie
-				</button>{' '}
+				</button> */}
 				{/* Button to show all images */}
 			</div>
 
