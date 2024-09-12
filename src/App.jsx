@@ -8,7 +8,7 @@ import Seo from "./components/Seo.jsx"
 function App() {
   return (
     <div className="roboto-condensed">
-      <main className="bg-[#f7f7f7] min-h-screen min-w-screen">
+      <main className="bg-[#fff] min-h-screen min-w-screen">
 
       </main>
       <Gallery />
