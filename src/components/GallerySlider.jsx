@@ -32,8 +32,8 @@ export default function GallerySlider() {
 		speed: 500,
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 4000,
+		// autoplay: true,
+		// autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 576,
@@ -97,24 +97,26 @@ export default function GallerySlider() {
 			</div>
 
 			{/* Slider with filtered images */}
-			<Slider
-				className='mb-20'
-				{...settings}>
-				{filteredImages.map((image, index) => (
-					<div
-						key={index}
-						className='sm:px-4 xl:px-[31.5px] outline-none' // Optimal padding for 601 x 446 images
-					>
-						<img
-							className={`cursor-grab transition-transform duration-500 ${isGrabbing ? 'cursor-grabbing scale-[.98]' : ''}`}
-							onMouseDown={handleMouseDown} // changes cursor
-							onMouseUp={handleMouseUp} // changes cursor
-							src={image.path}
-							alt={generateAltText(image.fileName)} // Generate dynamic alt text
-						/>
-					</div>
-				))}
-			</Slider>
+			<div className='mb-36 xl:mb-0 xl:min-h-[598px]'>
+				<Slider {...settings}>
+					{filteredImages.map((image, index) => (
+						<div
+							key={index}
+							className='sm:px-4 xl:px-[31.5px] outline-none' // Optimal padding for 601 x 446 images
+						>
+							<img
+								className={`cursor-grab transition-transform duration-500 ${
+									isGrabbing ? 'cursor-grabbing scale-[.98]' : ''
+								}`}
+								onMouseDown={handleMouseDown} // changes cursor
+								onMouseUp={handleMouseUp} // changes cursor
+								src={image.path}
+								alt={generateAltText(image.fileName)} // Generate dynamic alt text
+							/>
+						</div>
+					))}
+				</Slider>
+			</div>
 		</div>
 	)
 }
