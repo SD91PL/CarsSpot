@@ -11,16 +11,22 @@ export default function Hero() {
 							<p className='xl:w-1/2'>Kup wyjatkowy pojazd, aby każda podróż była wyjątkowym przeżyciem</p>
 						</div>
 						<div className='hero-cta flex gap-6 text-[.9375rem] roboto-flex'>
-							<button className='px-6 py-3 rounded-lg bg-[#0147FF] text-[#F7F7F7]'>Zobacz zdjęcia</button>
-							<button className='px-6 py-3 rounded-lg border-[#0147FF] border-[1px] text-[#0147FF]'>
+							<a
+								href='#gallery'
+								rel='noopener'
+								className='px-6 py-3 rounded-lg bg-[#0147FF] text-[#F7F7F7]'>
+								Zobacz zdjęcia
+							</a>
+							<a
+								href='tel:+48000555000'
+								rel='noopener'
+								className='px-6 py-3 rounded-lg border-[#0147FF] border-[1px] text-[#0147FF]'>
 								Zadzwoń do nas
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
-				<div className="hero-back">
-					
-				</div>
+				<div className='hero-back'>{/* WORK - add images / backgrounds */}</div>
 			</div>
 		</section>
 	)
