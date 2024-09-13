@@ -7,7 +7,7 @@ export default function Hero() {
 		<>
 			<section id='hero'>
 				<div className='mx-4'>
-					<div className='container relative  min-h-[700px] md:min-h-[805px] lg:min-h-[905px] xl:max-w-[1320px]'>
+					<div className='container relative min-h-[700px] md:min-h-[805px] lg:min-h-[905px] xl:max-w-[1320px]'>
 						<div className='container '>
 							<div className='hero-front absolute flex flex-col justify-center py-40 md:py-0 md:pb-40 h-full xl:min-h-[905px] z-20'>
 								<div className='flex flex-col gap-12 xl:w-3/4'>
