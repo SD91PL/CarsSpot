@@ -110,6 +110,7 @@ export default function GallerySlider() {
 								}`}
 								onMouseDown={handleMouseDown} // changes cursor
 								onMouseUp={handleMouseUp} // changes cursor
+								onMouseLeave={handleMouseUp} // Same action as onMouseUp - improved ux
 								src={image.path}
 								alt={generateAltText(image.fileName)} // Generate dynamic alt text
 							/>
