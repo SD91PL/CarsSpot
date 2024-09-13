@@ -14,10 +14,10 @@ export default function Hero() {
 							<div className='hero-front absolute flex flex-col justify-center py-40 md:py-0 md:pb-40 h-full xl:min-h-[905px] z-20'>
 								<div className='flex flex-col gap-12 lg:w-3/4'>
 									<div className='hero-header flex flex-col gap-8'>
-										<h1 className='bebas-neue text-[4.75rem] leading-[1.1]'>Sprzedajemy samochody z&nbsp;Europy</h1>
+										<h1 className='bebas-neue text-6xl sm:text-[4.75rem] leading-[1.1]'>Sprzedajemy samochody z&nbsp;Europy</h1>
 										<p className='xl:w-1/2'>Kup wyjatkowy pojazd, aby każda podróż była wyjątkowym przeżyciem</p>
 									</div>
-									<div className='hero-cta flex flex-wrap gap-2 gap-y-4 sm:gap-6 text-[.9375rem] roboto-flex font-semibold'>
+									<div className='hero-cta flex flex-wrap gap-6 gap-y-4 text-[.9375rem] roboto-flex font-semibold'>
 										<a
 											href='#gallery'
 											rel='noopener'
