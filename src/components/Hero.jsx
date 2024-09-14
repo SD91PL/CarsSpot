@@ -22,13 +22,13 @@ export default function Hero() {
 									<a
 										href='#gallery'
 										rel='noopener'
-										className='px-6 py-3 rounded-lg bg-[#0147FF] border-[#0147FF] border-[1px] text-[#F7F7F7]'>
+										className='px-6 py-3 rounded-lg bg-[#0147FF] border-[#0147FF] border-[1px] text-[#F7F7F7] transition-colors hover:bg-[#0038cc]'>
 										Zobacz zdjęcia
 									</a>
 									<a
 										href='tel:+48000555000'
 										rel='noopener'
-										className='px-6 py-3 rounded-lg bg-[#F7F7F7] border-[#0147FF] border-[1px] text-[#0147FF]'>
+										className='px-6 py-3 rounded-lg bg-[#F7F7F7] border-[#0147FF] border-[1px] text-[#0147FF] transition-transform hover:scale-105'>
 										Zadzwoń do nas
 									</a>
 								</div>
