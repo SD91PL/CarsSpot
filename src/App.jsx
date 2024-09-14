@@ -8,6 +8,7 @@ import Seo from "./components/Seo.jsx"
 function App() {
   return (
     <div className="roboto-condensed">
+      <Nav/>
       <Hero/>
       <Gallery />
       <Seo/>
