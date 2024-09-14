@@ -26,7 +26,7 @@ export default function Nav() {
 		<nav
 			id='nav'
 			className={`fixed top-0 left-0 right-0 min-h-20 w-full roboto-flex z-50 transition duration-300 ${
-				isScrolled ? 'bg-[#f7f7f7aa] backdrop-blur-md border-b border-b-[#f7f7f7] shadow-md' : 'bg-[#0000]'
+				isScrolled ? 'bg-[#f7f7f7bd] backdrop-blur-md border-b border-b-[#f7f7f7] shadow-md' : 'bg-[#0000]'
 			}`}>
 			<div className='mx-4'>
 				<div className='container flex flex-col justify-center min-h-20'>
@@ -42,7 +42,7 @@ export default function Nav() {
 							</div>
 						</a>
 						<ul
-							className={`hidden md:flex gap-6 py-3 px-8 rounded-lg transition duration-500 ${
+							className={`hidden md:flex gap-6 py-3 px-8 rounded-lg border border-[#f7f7f7] transition duration-500 ${
 								isScrolled ? 'backdrop-blur-md' : ''
 							}`}>
 							<a
