@@ -42,8 +42,8 @@ export default function Nav() {
 							</div>
 						</a>
 						<ul
-							className={`hidden md:flex gap-6 py-3 px-8 rounded-lg border border-[#f7f7f7] transition duration-500 ${
-								isScrolled ? 'backdrop-blur-md' : ''
+							className={`hidden md:flex gap-6 py-3 px-8 rounded-lg border border-[#0000] transition duration-500 ${
+								isScrolled ? 'backdrop-blur-md border-[#f7f7f7]' : ''
 							}`}>
 							<a
 								href='#gallery'
