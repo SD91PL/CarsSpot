@@ -45,16 +45,20 @@ export default function Nav() {
 							className={`hidden md:flex gap-6 py-3 px-8 rounded-lg border border-[#0000] transition duration-500 ${
 								isScrolled ? 'backdrop-blur-md border-[#f7f7f7]' : ''
 							}`}>
-							<a
-								href='#gallery'
-								rel='noopener'>
-								<li className='transition-colors duration-300 hover:text-[#0147FF]'>Galeria zdjęć</li>
-							</a>
-							<a
-								href='#seo'
-								rel='noopener'>
-								<li className='transition-colors duration-300 hover:text-[#0147FF]'>FAQ</li>
-							</a>
+							<li className='transition-colors duration-300 hover:text-[#0147FF]'>
+								<a
+									href='#gallery'
+									rel='noopener'>
+									Galeria zdjęć
+								</a>
+							</li>
+							<li className='transition-colors duration-300 hover:text-[#0147FF]'>
+								<a
+									href='#seo'
+									rel='noopener'>
+									FAQ
+								</a>
+							</li>
 						</ul>
 						<a
 							href='tel:+48000555000'
