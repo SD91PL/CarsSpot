@@ -106,7 +106,7 @@ export default function GallerySlider() {
 						>
 							<img
 								className={`cursor-grab transition-transform duration-500 ${
-									isGrabbing ? 'cursor-grabbing scale-[.98]' : ''
+									isGrabbing ? 'cursor-grabbing' : ''
 								}`}
 								onMouseDown={handleMouseDown} // changes cursor
 								onMouseUp={handleMouseUp} // changes cursor

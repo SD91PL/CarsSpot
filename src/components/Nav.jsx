@@ -26,7 +26,9 @@ export default function Nav() {
 		<nav
 			id='nav'
 			className={`fixed top-0 left-0 right-0 min-h-20 w-full border-b border-b-[#0000] roboto-flex z-50 transition duration-300 focus-in animation-delay-900 ${
-				isScrolled ? 'bg-[#f7f7f7bd] backdrop-blur-md border-b-[#f7f7f7]' : 'bg-[#0000]'
+				isScrolled
+					? 'bg-[#f7f7f7bd] backdrop-blur-md border-b-[#f7f7f7]'
+					: 'bg-[#0000]'
 			}`}>
 			<div className='mx-4'>
 				<div className='container flex flex-col justify-center min-h-20'>
@@ -64,7 +66,7 @@ export default function Nav() {
 							href='tel:+48000555000'
 							rel='noopener'
 							className='px-6 py-3 rounded-lg bg-[#0147FF] border-[#0147FF] border text-[#F7F7F7] text-[.9375rem] font-semibold transition-colors hover:bg-[#0038cc]'>
-							Zadzwoń do nas
+							Zadzwoń <span className='hidden sm:inline'>do nas</span>
 						</a>
 					</div>
 				</div>
