@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<footer className='bg-[#282828] min-w-screen border-t border-solid border-white'>
+		<footer className='bg-[#282828] min-w-screen border-t border-solid border-white focus-in animation-delay-1200'>
 			<div className='mx-4'>
 				<div className='container'>
 					<div className='flex justify-between items-center min-h-[72px] text-white text-base'>

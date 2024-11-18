@@ -4,9 +4,9 @@ export default function Seo() {
 	return (
 		<section
 			id='seo'
-			className='bg-[#282828] min-w-screen'>
+			className='bg-[#282828] min-w-screen focus-in animation-delay-1200'>
 			<div className='mx-4'>
-				<div className='container'>
+				<div className='container '>
 					<div className='flex justify-between items-center gap-x-12 gap-y-20 py-20 min-h-[360px] text-white text-base flex-wrap md:flex-nowrap'>
 						<SeoCard
 							header='Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.'

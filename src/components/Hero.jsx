@@ -17,7 +17,8 @@ export default function Hero() {
 										Sprzedajemy samochody z&nbsp;Europy
 									</h1>
 									<p className='xl:w-1/2 focus-in animation-delay-300'>
-										Kup wyjatkowy pojazd, aby każda podróż była wyjątkowym przeżyciem
+										Kup wyjatkowy pojazd, aby każda podróż była wyjątkowym
+										przeżyciem
 									</p>
 								</div>
 								<div className='hero-cta flex flex-wrap gap-6 gap-y-4 text-[.9375rem] roboto-flex font-semibold focus-in animation-delay-600'>
@@ -38,7 +39,7 @@ export default function Hero() {
 						</div>
 					</div>
 					{/* Background*/}
-					<div className='hero-back z-0 opacity-30 md:opacity-50 xl:opacity-100'>
+					<div className='hero-back z-0 opacity-30 md:opacity-50 xl:opacity-100 focus-in animation-delay-600'>
 						<div className='relative flex justify-end'>
 							<img
 								src={HeroBg}
@@ -50,7 +51,7 @@ export default function Hero() {
 				</div>
 			</div>
 			{/* Image above background - Cars */}
-			<div className='relative container max-w-[576px] sm:max-w-[768px] md:max-w-[992px] lg:max-w-[1200px] xl:max-w-[1440px]'>
+			<div className='relative container max-w-[576px] sm:max-w-[768px] md:max-w-[992px] lg:max-w-[1200px] xl:max-w-[1440px] focus-in animation-delay-300'>
 				<div className='absolute bottom-0 xl:bottom-20 right-0 flex justify-end ps-4'>
 					<img
 						src={HeroImg}
