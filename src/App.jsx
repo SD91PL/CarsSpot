@@ -9,7 +9,7 @@ function App() {
 	return (
 		<>
 			<Nav />
-			<main>
+			<main className='xl:bg-[#d9dcd5]'>
 				<Hero />
 				<Gallery />
 				<Seo />

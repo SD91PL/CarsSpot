@@ -7,8 +7,8 @@ export default function Hero() {
 		<section
 			id='hero'
 			className='min-h-[45rem]'>
-			<div className='mx-4'>
-				<div className='container relative min-h-[720px] md:min-h-[805px] lg:min-h-[905px] xl:max-w-[1320px]'>
+			<div className='mx-4 xl:mx-0'>
+				<div className='container relative min-h-[720px] md:min-h-[805px] lg:min-h-[905px] xl:max-w-[1440px] xl:px-14 bg-[#f7f7f7]'>
 					<div className='container '>
 						<div className='hero-front absolute flex flex-col justify-center py-40 md:py-0 md:pb-40 h-full xl:min-h-[905px] z-20'>
 							<div className='flex flex-col gap-12 lg:w-3/4'>
